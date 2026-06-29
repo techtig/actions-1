@@ -14,5 +14,5 @@ jobs:
         - name: List Repo Files
           run: ls -ltra
 
-        - name: Executing Shell script
+        - name: Execute Shell script
           run: ./newscript.sh
