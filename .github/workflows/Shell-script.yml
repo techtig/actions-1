@@ -8,11 +8,11 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout code
-              uses: actions/checkout@v7
+        - name: Checkout code
+          uses: actions/checkout@v7
 
-            - name: List Repo Files
-              run: ls -ltra
+        - name: List Repo Files
+          run: ls -ltra
 
-            - name: Executing Shell script
-              run: ./ascii-script.sh
+        - name: Executing Shell script
+          run: ./ascii-script.sh
