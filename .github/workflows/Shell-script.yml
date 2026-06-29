@@ -1,0 +1,18 @@
+name: Shell script for Ascii 
+
+on:
+    push
+
+jobs:
+    ascii_job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v7
+
+            - name: checkout Repo Files
+              run: ls -ltra
+
+            - name: Executing Shell script
+              run: ./ascii-script.sh
